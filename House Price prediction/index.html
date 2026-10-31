@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateIQ | Housing Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a class="logo" href="#" onclick="showPage('home')">
+        <span>⌂</span> EstateIQ
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#" data-page="home" class="active">Home</a>
+        <a href="#" data-page="services">Services</a>
+        <a href="#" data-page="about">About Us</a>
+        <a href="#" data-page="predict" class="nav-button">
+            Predict Price ↗
+        </a>
+    </div>
+</nav>
+
+<main>
+
+<!-- HOME PAGE -->
+<section id="home" class="page active-page">
+
+    <div class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">AI POWERED PROPERTY INTELLIGENCE</span>
+
+            <h1>Discover the true value of your <span>property.</span></h1>
+
+            <p>
+                Predict housing prices using advanced machine learning
+                and intelligent ensemble models. Get property insights
+                in seconds.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary"
+                    onclick="showPage('predict')">
+                    Predict House Price →
+                </button>
+
+                <button class="btn-outline"
+                    onclick="showPage('services')">
+                    Explore Services
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div><h3>5+</h3><p>ML Algorithms</p></div>
+                <div><h3>13</h3><p>Input Features</p></div>
+                <div><h3>AI</h3><p>Powered</p></div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="visual-top">
+                <span>PROPERTY INTELLIGENCE</span>
+                <span class="live">● AI MODEL</span>
+            </div>
+
+            <div class="house-icon">⌂</div>
+
+            <h2>Smarter property decisions.</h2>
+            <p>Data-driven housing price estimation.</p>
+
+            <div class="visual-bottom">
+                <span>Ensemble Prediction</span>
+                <span>✓</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">
+            <span class="eyebrow">WHY ESTATEIQ?</span>
+            <h2>Intelligence behind every prediction.</h2>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="icon">✦</div>
+                <h3>Machine Learning</h3>
+                <p>Analyze housing features using multiple algorithms.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⌁</div>
+                <h3>Ensemble Learning</h3>
+                <p>Combine selected models for a unified prediction.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">◷</div>
+                <h3>Fast Results</h3>
+                <p>Get an estimated property price in seconds.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to estimate your property value?</h2>
+        <p>Enter your housing details and generate a prediction.</p>
+        <button class="btn-light" onclick="showPage('predict')">
+            Start Prediction →
+        </button>
+    </div>
+</section>
+
+
+<!-- SERVICES PAGE -->
+<section id="services" class="page">
+
+    <div class="page-header">
+        <span class="eyebrow">WHAT WE OFFER</span>
+        <h1>Our <span>Services</span></h1>
+        <p>Smart tools to understand and estimate housing prices.</p>
+    </div>
+
+    <div class="section card-grid">
+
+        <div class="card">
+            <div class="icon">⌂</div>
+            <h3>House Price Prediction</h3>
+            <p>Estimate housing prices using 13 property features.</p>
+            <button class="text-button" onclick="showPage('predict')">
+                Try Now →
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="icon">◈</div>
+            <h3>Machine Learning Analysis</h3>
+            <p>Discover patterns and relationships in housing data.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⌁</div>
+            <h3>Ensemble Learning</h3>
+            <p>Combine predictions from multiple trained algorithms.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">▤</div>
+            <h3>Property Insights</h3>
+            <p>Explore the features used for estimating property values.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT PAGE -->
+<section id="about" class="page">
+
+    <div class="page-header">
+        <span class="eyebrow">ABOUT ESTATEIQ</span>
+        <h1>Making housing insights <span>smarter.</span></h1>
+        <p>Machine learning meets property price estimation.</p>
+    </div>
+
+    <div class="section about-grid">
+
+        <div class="about-card">
+            <span class="eyebrow">OUR MISSION</span>
+            <h2>Technology meets real estate.</h2>
+
+            <p>
+                EstateIQ is a machine learning based housing
+                price prediction project designed to estimate
+                property values using housing characteristics.
+            </p>
+
+            <p>
+                Our system uses Linear Regression, Ridge Regression,
+                Random Forest, Gradient Boosting and Extra Trees,
+                combined through a weighted Voting Regressor.
+            </p>
+        </div>
+
+        <div class="about-highlight">
+            <h2>13</h2>
+            <p>Housing features</p>
+            <hr>
+
+            <h2>5</h2>
+            <p>Individual ML models</p>
+            <hr>
+
+            <h2>1</h2>
+            <p>Ensemble prediction system</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PREDICTION PAGE -->
+<section id="predict" class="page">
+
+    <div class="page-header">
+        <span class="eyebrow">AI PROPERTY ESTIMATOR</span>
+        <h1>Predict Your <span>House Price</span></h1>
+        <p>Enter all 13 housing features to estimate your property value.</p>
+    </div>
+
+    <div class="prediction-wrapper">
+
+        <form id="predictionForm">
+
+            <h2>Property Information</h2>
+            <p class="form-description">
+                Fill in the housing details below.
+            </p>
+
+            <div class="input-grid">
+
+                <div class="input-group">
+                    <label for="CRIM">CRIM - Crime Rate per Capita</label>
+                    <input type="number" step="any" id="CRIM" name="CRIM" placeholder="e.g. 0.027" required>
+                    <span class="input-hint">Town per capita crime rate</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="ZN">ZN - Residential Land Zone (%)</label>
+                    <input type="number" step="any" id="ZN" name="ZN" placeholder="e.g. 18.0" required>
+                    <span class="input-hint">Proportion of zoned residential lots > 25k sq.ft</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="INDUS">INDUS - Industrial Area (%)</label>
+                    <input type="number" step="any" id="INDUS" name="INDUS" placeholder="e.g. 7.07" required>
+                    <span class="input-hint">Non-retail business acres per town</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="CHAS">CHAS - Charles River Bound</label>
+                    <select id="CHAS" name="CHAS" required>
+                        <option value="0">0 - Does Not Tract River</option>
+                        <option value="1">1 - Tracts Charles River</option>
+                    </select>
+                    <span class="input-hint">1 if property tracts Charles river, 0 otherwise</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="NOX">NOX - Nitric Oxide Concentration</label>
+                    <input type="number" step="any" id="NOX" name="NOX" placeholder="e.g. 0.469" required>
+                    <span class="input-hint">Parts per 10 million</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="RM">RM - Average Rooms per Dwelling</label>
+                    <input type="number" step="any" id="RM" name="RM" placeholder="e.g. 6.42" required>
+                    <span class="input-hint">Average number of rooms per home</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="AGE">AGE - Older Houses Built Pre-1940 (%)</label>
+                    <input type="number" step="any" id="AGE" name="AGE" placeholder="e.g. 65.2" required>
+                    <span class="input-hint">Percentage of owner units built prior to 1940</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="DIS">DIS - Distance to Employment Centres</label>
+                    <input type="number" step="any" id="DIS" name="DIS" placeholder="e.g. 4.96" required>
+                    <span class="input-hint">Weighted distance to Boston employment centers</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="RAD">RAD - Highway Accessibility Index</label>
+                    <input type="number" step="any" id="RAD" name="RAD" placeholder="e.g. 4" required>
+                    <span class="input-hint">Index of accessibility to radial highways</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="TAX">TAX - Property Tax Rate</label>
+                    <input type="number" step="any" id="TAX" name="TAX" placeholder="e.g. 296" required>
+                    <span class="input-hint">Full-value property-tax rate per $10,000</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="PTRATIO">PTRATIO - Pupil-Teacher Ratio</label>
+                    <input type="number" step="any" id="PTRATIO" name="PTRATIO" placeholder="e.g. 15.3" required>
+                    <span class="input-hint">Pupil-teacher ratio by town</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="B">B - Population Demographic Index</label>
+                    <input type="number" step="any" id="B" name="B" placeholder="e.g. 396.9" required>
+                    <span class="input-hint">1000(Bk - 0.63)^2 by town</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="LSTAT">LSTAT - Lower Status Population (%)</label>
+                    <input type="number" step="any" id="LSTAT" name="LSTAT" placeholder="e.g. 4.98" required>
+                    <span class="input-hint">% lower status of the population</span>
+                </div>
+
+            </div>
+
+            <div class="form-actions">
+                <button class="btn-primary submit-btn" type="submit"
+                        id="predictButton">
+                    Calculate House Price →
+                </button>
+                <div class="form-quick-buttons">
+                    <button type="button" class="btn-secondary" id="sampleBtn">
+                        ⚡ Fill Sample Values
+                    </button>
+                    <button type="button" class="btn-outline" id="clearBtn">
+                        ✕ Reset Form
+                    </button>
+                </div>
+            </div>
+
+        </form>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Analyzing property features with ML model...</p>
+        </div>
+
+        <div id="errorBox" class="error-box hidden"></div>
+
+        <div id="resultCard" class="result-card hidden">
+
+            <div class="result-icon">✓</div>
+
+            <span class="eyebrow eyebrow-light">PREDICTION COMPLETED</span>
+
+            <h2>Estimated Property Value</h2>
+
+            <div class="result-price" id="resultPrice">$0</div>
+
+            <p class="result-subtitle" id="resultThousands"></p>
+
+            <div class="result-details">
+                <div>
+                    <span>Prediction Status</span>
+                    <strong id="resultStatus">Successful</strong>
+                </div>
+
+                <div>
+                    <span>Best ML Algorithm</span>
+                    <strong id="resultModel">Ensemble Regressor</strong>
+                </div>
+
+                <div>
+                    <span>Model Accuracy (R² Score)</span>
+                    <strong id="resultScore">--</strong>
+                </div>
+
+                <div>
+                    <span>Estimated Valuation Range</span>
+                    <strong id="resultRange">--</strong>
+                </div>
+            </div>
+
+            <div class="result-card-buttons">
+                <button class="btn-light" onclick="window.print()">
+                    🖨 Print Result
+                </button>
+                <button class="btn-outline-light" onclick="document.getElementById('predictionForm').scrollIntoView({behavior:'smooth'})">
+                    ↺ Calculate Another
+                </button>
+            </div>
+
+            <p class="disclaimer">
+                This is a model estimate based on Boston Housing characteristics, not an official
+                certified property appraisal or current market quote.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <h3>EstateIQ</h3>
+    <p>Smarter property insights powered by machine learning.</p>
+    <p>© 2026 EstateIQ. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
